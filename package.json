@@ -9,5 +9,7 @@
     "build": "cd client && npm run build",
     "dev": "node dev.js"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
 }
