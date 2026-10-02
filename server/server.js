@@ -24,40 +24,49 @@ const initialProjects = [
   {
     title: 'Khối xe nghi trượng A05',
     category: 'ĐẠI LỄ QUỐC GIA',
-    image: '/assets/images/xe-nghi-truong-main.jpg',
+    image: '/assets/images/xe-nghi-truong-main.webp',
     description: 'Sản xuất khối xe nghi trượng phục vụ đại lễ cấp quốc gia A05-A80.',
     order: 1
   },
   {
     title: 'Tượng đài chiến thắng',
     category: 'CÔNG TRÌNH TƯỢNG ĐÀI',
-    image: '/assets/images/tuong-dai-chien-thang.jpg',
+    image: '/assets/images/tuong-dai-chien-thang.webp',
     description: 'Thiết kế và đúc tượng đài nghệ thuật tôn vinh chiến thắng lịch sử.',
     order: 2
   },
   {
     title: 'Tượng Bác Hồ',
     category: 'TƯỢNG CHÂN DUNG',
-    image: '/assets/images/tuong-bac-ho.jpg',
+    image: '/assets/images/tuong-bac-ho.webp',
     description: 'Chế tác tượng chân dung Chủ tịch Hồ Chí Minh chuẩn mực thần thái.',
     order: 3
   },
   {
     title: 'Công trình di tích',
     category: 'DI TÍCH LỊCH SỬ',
-    image: '/assets/images/cong-trinh-di-tich.jpg',
+    image: '/assets/images/cong-trinh-di-tich.webp',
     description: 'Phục dựng và chế tác các hạng mục cơ khí mỹ thuật đền chùa di tích.',
     order: 4
   }
 ];
 
-// Seed projects function
+// Seed projects function & migration to .webp
 async function seedProjectsIfEmpty() {
   try {
     const count = await Project.countDocuments();
     if (count === 0) {
       await Project.insertMany(initialProjects);
       console.log('Seeded initial projects into MongoDB database.');
+    } else {
+      // Migrate any existing .jpg/.png URLs to .webp in MongoDB
+      const existingProjects = await Project.find();
+      for (const p of existingProjects) {
+        if (p.image && /\.(jpg|jpeg|png)$/i.test(p.image)) {
+          p.image = p.image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+          await p.save();
+        }
+      }
     }
   } catch (err) {
     console.error('Error seeding projects:', err.message);

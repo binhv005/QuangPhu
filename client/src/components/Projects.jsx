@@ -63,7 +63,11 @@ export default function Projects({ onOpenLightbox }) {
       .then((res) => res.json())
       .then((data) => {
         if (data && data.success && data.data.length > 0) {
-          setProjects(data.data);
+          const sanitized = data.data.map((item) => ({
+            ...item,
+            image: item.image ? item.image.replace(/\.(jpg|jpeg|png)$/i, '.webp') : item.image
+          }));
+          setProjects(sanitized);
         }
       })
       .catch((err) => console.log('Using default project list:', err));
