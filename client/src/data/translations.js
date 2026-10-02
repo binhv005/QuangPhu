@@ -51,28 +51,28 @@ export const translations = {
           num: '01',
           title: 'KHỐI XE NGHI TRƯỢNG ĐẠI LỄ',
           desc: 'Thiết kế và sản xuất mô hình khối xe nghi trượng quy mô lớn phục vụ các sự kiện, đại lễ cấp quốc gia A05 – A80, bảo đảm tính tôn nghiêm, hoành tráng và chính xác tuyệt đối.',
-          img: '/assets/images/xe-nghi-truong-main.jpg',
+          img: '/assets/images/xe-nghi-truong-main.webp',
           link: '/dich-vu'
         },
         {
           num: '02',
           title: 'TƯỢNG CHÂN DUNG BÁC HỒ & DANH NHÂN',
           desc: 'Chế tác tượng Bác Hồ chuẩn tỷ lệ, đường nét trang nghiêm và biểu cảm sống động bằng đồng đỏ, đồng vàng nguyên khối cho hội trường, cơ quan nhà nước và di tích lịch sử.',
-          img: '/assets/images/tuong-bac-ho.jpg',
+          img: '/assets/images/tuong-bac-ho.webp',
           link: '/dich-vu'
         },
         {
           num: '03',
           title: 'TƯỢNG CHÂN DUNG THỜ GIA TIÊN',
           desc: 'Tạo tác tượng thờ truyền thần bằng đồng thủ công theo yêu cầu gia đình, dòng họ; chuẩn tỷ lệ nhân trắc học và phong thủy, đảm bảo tính chân thực, trang trọng và tôn nghiêm lưu truyền muôn đời.',
-          img: '/assets/images/tuong-tho.jpg',
+          img: '/assets/images/tuong-tho.webp',
           link: '/dich-vu'
         },
         {
           num: '04',
           title: 'QUÀ TẶNG & BIỂU TƯỢNG MỸ THUẬT CAO CẤP',
           desc: 'Tác phẩm mỹ nghệ mạ vàng 24K, quà tặng sự kiện độc bản, biểu trưng cơ khí mỹ thuật tinh xảo theo đơn đặt hàng độc quyền cho các tổ chức, tập đoàn và sự kiện ngoại giao.',
-          img: '/assets/images/qua-tang-my-thuat.jpg',
+          img: '/assets/images/qua-tang-my-thuat.webp',
           link: '/dich-vu'
         }
       ]
@@ -210,28 +210,28 @@ export const translations = {
           num: '01',
           title: 'NATIONAL CEREMONIAL FLOATS',
           desc: 'Design and large-scale manufacturing of majestic ceremonial floats for national-level celebrations A05 – A80, ensuring supreme grandeur, solemnity, and precision.',
-          img: '/assets/images/xe-nghi-truong-main.jpg',
+          img: '/assets/images/xe-nghi-truong-main.webp',
           link: '/dich-vu'
         },
         {
           num: '02',
           title: 'PRESIDENT HO CHI MINH & HISTORICAL FIGURES',
           desc: 'Crafting statues of President Ho Chi Minh and national luminaries with standard anatomical proportions, dignified expression, and solemn aura in solid red/yellow bronze.',
-          img: '/assets/images/tuong-bac-ho.jpg',
+          img: '/assets/images/tuong-bac-ho.webp',
           link: '/dich-vu'
         },
         {
           num: '03',
           title: 'ANCESTRAL PORTRAIT STATUES',
           desc: 'Custom handmade lifelike ancestral bronze statues tailored to family lineages; adhering strictly to anatomical science and sacred traditions for eternal veneration.',
-          img: '/assets/images/tuong-tho.jpg',
+          img: '/assets/images/tuong-tho.webp',
           link: '/dich-vu'
         },
         {
           num: '04',
           title: 'LUXURY GIFTS & ARTISTIC EMBLEMS',
           desc: '24K gold-plated masterpieces, unique VIP event gifts, and exquisite mechanical art symbols commissioned exclusively for diplomatic events and corporations.',
-          img: '/assets/images/qua-tang-my-thuat.jpg',
+          img: '/assets/images/qua-tang-my-thuat.webp',
           link: '/dich-vu'
         }
       ]

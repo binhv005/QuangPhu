@@ -5031,7 +5031,7 @@ textarea.form-control {
   right: -3%;
   width: clamp(280px, 32vw, 500px);
   height: clamp(220px, 26vw, 400px);
-  background-image: url('/assets/images/bg-motif-cloud.png');
+  background-image: url('/assets/images/bg-motif-cloud.webp');
   background-position: top right;
 }
 
@@ -5040,7 +5040,7 @@ textarea.form-control {
   left: -3%;
   width: clamp(260px, 30vw, 460px);
   height: clamp(200px, 24vw, 360px);
-  background-image: url('/assets/images/bg-motif-cloud.png');
+  background-image: url('/assets/images/bg-motif-cloud.webp');
   background-position: top left;
   transform: scaleX(-1);
 }
@@ -5050,7 +5050,7 @@ textarea.form-control {
   right: 4%;
   width: clamp(280px, 32vw, 480px);
   height: clamp(210px, 24vw, 360px);
-  background-image: url('/assets/images/bg-motif-cloud.png');
+  background-image: url('/assets/images/bg-motif-cloud.webp');
   background-position: center;
 }
 
@@ -5060,7 +5060,7 @@ textarea.form-control {
   left: -2%;
   width: clamp(220px, 26vw, 400px);
   height: clamp(280px, 34vw, 480px);
-  background-image: url('/assets/images/bg-motif-mountain.png');
+  background-image: url('/assets/images/bg-motif-mountain.webp');
   background-position: bottom left;
 }
 
@@ -5069,7 +5069,7 @@ textarea.form-control {
   right: -2%;
   width: clamp(220px, 26vw, 400px);
   height: clamp(280px, 34vw, 480px);
-  background-image: url('/assets/images/bg-motif-mountain.png');
+  background-image: url('/assets/images/bg-motif-mountain.webp');
   background-position: bottom right;
   transform: scaleX(-1);
 }

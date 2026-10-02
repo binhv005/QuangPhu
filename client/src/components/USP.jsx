@@ -47,7 +47,7 @@ export default function USP() {
 
         <div className="usp-media reveal-right" data-delay="150">
           <div className="usp-media-frame">
-            <img src="/assets/images/xe-nghi-truong-main.jpg" alt="Quang Phu Fine Art Mechanics" loading="lazy" />
+            <img src="/assets/images/xe-nghi-truong-main.webp" alt="Quang Phu Fine Art Mechanics" loading="lazy" />
           </div>
         </div>
       </div>

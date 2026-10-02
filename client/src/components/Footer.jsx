@@ -14,7 +14,7 @@ export default function Footer({ onPhoneClick }) {
       {/* Background Graphic: Logo Accent */}
       <div className="footer-pinwheel-bg" aria-hidden="true">
         <img
-          src="/assets/images/logo.png"
+          src="/assets/images/logo.webp"
           alt="Logo Quảng Phú"
           className="footer-logo-bg-img"
         />

@@ -5,27 +5,27 @@ import TypewriterText from './TypewriterText';
 export default function Gallery({ onOpenLightbox }) {
   const galleryItems = [
     {
-      src: '/assets/images/gallery-cham-dong.jpg',
+      src: '/assets/images/gallery-cham-dong.webp',
       caption: 'Chạm khắc đồng mỹ nghệ thủ công tinh xảo',
       span2: true
     },
     {
-      src: '/assets/images/about-artisan.jpg',
+      src: '/assets/images/about-artisan.webp',
       caption: 'Nghệ nhân gọt giũa tượng chân dung danh nhân',
       span2: false
     },
     {
-      src: '/assets/images/xe-nghi-truong-main.jpg',
+      src: '/assets/images/xe-nghi-truong-main.webp',
       caption: 'Khối xe nghi trượng uy nghiêm tại đại lễ kỷ niệm',
       span2: false
     },
     {
-      src: '/assets/images/gallery-nha-xuong.jpg',
+      src: '/assets/images/gallery-nha-xuong.webp',
       caption: 'Xưởng sản xuất cơ khí mỹ thuật quy mô lớn',
       span2: false
     },
     {
-      src: '/assets/images/tuong-dai-chien-thang.jpg',
+      src: '/assets/images/tuong-dai-chien-thang.webp',
       caption: 'Công trình tượng đài chiến thắng ngoài trời',
       span2: false
     }

@@ -43,7 +43,7 @@ export default function Hero() {
       {/* Background Bottom-Left Cloud Motif Layer (Blurred & Subtle in background layer) */}
       <div className="hero-bottom-left-motif" aria-hidden="true">
         <img
-          src="/assets/images/bg-motif-cloud.png"
+          src="/assets/images/bg-motif-cloud.webp"
           alt=""
           loading="eager"
         />
@@ -91,7 +91,7 @@ export default function Hero() {
         <div className="hero-editorial-right reveal-up" data-delay="250">
           <div className="hero-rotating-emblem-wrap">
             <img
-              src="/assets/images/hero-rotating-emblem.png"
+              src="/assets/images/hero-rotating-emblem.webp"
               alt={dict.hero.emblemAlt}
               className="hero-rotating-emblem-img"
               style={{ animation: 'heroEmblemRotate 22s linear infinite' }}

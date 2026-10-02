@@ -105,7 +105,7 @@ export default function AboutPage() {
             {/* Brand Logo (Tightly Cropped Transparent PNG) */}
             <div className="about-brand-emblem-wrap">
               <img
-                src="/assets/images/about-logo.png"
+                src="/assets/images/about-logo.webp"
                 alt="Logo Quảng Phú"
                 className="about-brand-emblem-img"
               />

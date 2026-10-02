@@ -11,8 +11,8 @@ export default function PartnerMarquee({ title, subtitle, showTitle = false }) {
   const partners = [
     { name: 'Bộ Quốc phòng', logo: '/assets/partners/Bo-quoc-phong.svg' },
     { name: 'Bộ Công an', logo: '/assets/partners/Bo-cong-an-300x246.webp' },
-    { name: 'Bộ Ngoại giao', logo: '/assets/partners/Bo-ngoai-giao-300x183.png' },
-    { name: 'Bộ Tài chính', logo: '/assets/partners/Bo-tai-chinh-300x300.png' },
+    { name: 'Bộ Ngoại giao', logo: '/assets/partners/Bo-ngoai-giao-300x183.webp' },
+    { name: 'Bộ Tài chính', logo: '/assets/partners/Bo-tai-chinh-300x300.webp' },
     { name: 'Bộ Khoa học & Công nghệ', logo: '/assets/partners/Bo-KHCN-300x300.webp' },
     { name: 'Bộ Văn hoá, Thể thao và Du lịch', logo: '/assets/partners/Bo-quoc-phong.svg' },
     { name: 'Bộ Giáo dục và Đào tạo', logo: '/assets/partners/Bo-quoc-phong.svg' },
@@ -28,10 +28,10 @@ export default function PartnerMarquee({ title, subtitle, showTitle = false }) {
     { name: 'Tỉnh Thái Nguyên', logo: '/assets/partners/Thai-Nguyen-300x300.webp' },
     { name: 'Tỉnh Gia Lai', logo: '/assets/partners/Gia-Lai-300x300.webp' },
     { name: 'Tỉnh Lào Cai', logo: '/assets/partners/Lao-Cai-300x300.webp' },
-    { name: 'Trung ương Đoàn TNCS Hồ Chí Minh', logo: '/assets/partners/TW-doan-272x300.png' },
-    { name: 'Tổng Liên đoàn Lao động Việt Nam', logo: '/assets/partners/tong-lien-doan-300x277.png' },
+    { name: 'Trung ương Đoàn TNCS Hồ Chí Minh', logo: '/assets/partners/TW-doan-272x300.webp' },
+    { name: 'Tổng Liên đoàn Lao động Việt Nam', logo: '/assets/partners/tong-lien-doan-300x277.webp' },
     { name: 'Hội Nông dân Việt Nam', logo: '/assets/partners/hoi-nong-dan-300x300.webp' },
-    { name: 'Hội Liên hiệp Thanh niên Việt Nam', logo: '/assets/partners/lien-hiep-thanh-nien-300x300.png' }
+    { name: 'Hội Liên hiệp Thanh niên Việt Nam', logo: '/assets/partners/lien-hiep-thanh-nien-300x300.webp' }
   ];
 
   return (

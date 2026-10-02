@@ -131,7 +131,7 @@ export default function Header() {
         <div className="container header-container">
           {/* Brand Logo */}
           <Link to="/" className="brand-logo" onClick={handleNavClick}>
-            <img src="/assets/images/about-logo.png" alt="Logo Quảng Phú" />
+            <img src="/assets/images/about-logo.webp" alt="Logo Quảng Phú" />
             <div className="brand-text">
               <span className="brand-title">{dict.brand.title}</span>
               <span className="brand-sub">{dict.brand.sub}</span>
@@ -145,7 +145,7 @@ export default function Header() {
               {/* Mobile Sidebar Header */}
               <div className="mobile-sidebar-header">
                 <div className="mobile-sidebar-brand">
-                  <img src="/assets/images/about-logo.png" alt="Logo Quảng Phú" />
+                  <img src="/assets/images/about-logo.webp" alt="Logo Quảng Phú" />
                   <span>{dict.brand.title}</span>
                 </div>
                 <button

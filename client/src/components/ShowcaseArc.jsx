@@ -4,72 +4,72 @@ import { ZoomIn } from 'lucide-react';
 const allShowcaseItems = [
   {
     id: 1,
-    image: '/assets/images/xe-nghi-truong-main.jpg',
+    image: '/assets/images/xe-nghi-truong-main.webp',
     title: 'Khối xe nghi trượng đại lễ Quốc gia A05 – A80',
   },
   {
     id: 2,
-    image: '/assets/images/tuong-bac-ho.jpg',
+    image: '/assets/images/tuong-bac-ho.webp',
     title: 'Tượng Bác Hồ bằng đồng đúc tinh xảo thần thái',
   },
   {
     id: 3,
-    image: '/assets/images/tuong-dai-chien-thang.jpg',
+    image: '/assets/images/tuong-dai-chien-thang.webp',
     title: 'Tượng đài chiến thắng & Biểu tượng lịch sử',
   },
   {
     id: 4,
-    image: '/assets/images/about-artisan.jpg',
+    image: '/assets/images/about-artisan.webp',
     title: 'Chế tác chạm khắc gò đúc đồng thủ công tinh hoa',
   },
   {
     id: 5,
-    image: '/assets/images/qua-tang-my-thuat.jpg',
+    image: '/assets/images/qua-tang-my-thuat.webp',
     title: 'Mô hình biểu tượng quà tặng mỹ nghệ mạ vàng 24K',
   },
   {
     id: 6,
-    image: '/assets/images/cong-trinh-di-tich.jpg',
+    image: '/assets/images/cong-trinh-di-tich.webp',
     title: 'Công trình di tích lịch sử văn hóa tiêu biểu',
   },
   {
     id: 7,
-    image: '/assets/images/gallery-cham-dong.jpg',
+    image: '/assets/images/gallery-cham-dong.webp',
     title: 'Nghệ thuật chạm khắc đồng thủ công truyền thống',
   },
   {
     id: 8,
-    image: '/assets/images/hero-artisan.jpg',
+    image: '/assets/images/hero-artisan.webp',
     title: 'Nghệ nhân tạo tác khuôn mẫu & điêu khắc tỷ lệ vàng',
   },
   {
     id: 9,
-    image: '/assets/images/khach-hang-su-kien.jpg',
+    image: '/assets/images/khach-hang-su-kien.webp',
     title: 'Đại lễ & Sự kiện quy mô cấp Quốc gia',
   },
   {
     id: 10,
-    image: '/assets/images/tuong-tho.jpg',
+    image: '/assets/images/tuong-tho.webp',
     title: 'Tượng danh nhân & Tượng nghệ thuật linh thiêng',
   },
   {
     id: 11,
-    image: '/assets/images/quy-trinh-han.jpg',
+    image: '/assets/images/quy-trinh-han.webp',
     title: 'Kỹ thuật xử lý cơ khí mỹ thuật chính xác cao',
   },
   {
     id: 12,
-    image: '/assets/images/gallery-nha-xuong.jpg',
+    image: '/assets/images/gallery-nha-xuong.webp',
     title: 'Quy mô nhà xưởng chế tác cơ khí mỹ thuật hiện đại',
   },
   {
     id: 13,
-    image: '/assets/images/khach-hang-co-quan.jpg',
+    image: '/assets/images/khach-hang-co-quan.webp',
     title: 'Công trình biểu tượng cơ quan nhà nước & bộ ngành',
   },
   {
     id: 14,
-    image: '/assets/images/khach-hang-di-tich.jpg',
+    image: '/assets/images/khach-hang-di-tich.webp',
     title: 'Quần thể công trình tâm linh & di sản văn hóa',
   },
 ];

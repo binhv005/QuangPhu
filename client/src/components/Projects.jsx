@@ -9,22 +9,22 @@ export default function Projects({ onOpenLightbox }) {
     {
       title: 'Khối xe nghi trượng A05',
       category: 'ĐẠI LỄ QUỐC GIA',
-      image: '/assets/images/xe-nghi-truong-main.jpg'
+      image: '/assets/images/xe-nghi-truong-main.webp'
     },
     {
       title: 'Tượng đài chiến thắng',
       category: 'CÔNG TRÌNH TƯỢNG ĐÀI',
-      image: '/assets/images/tuong-dai-chien-thang.jpg'
+      image: '/assets/images/tuong-dai-chien-thang.webp'
     },
     {
       title: 'Tượng Bác Hồ',
       category: 'TƯỢNG CHÂN DUNG',
-      image: '/assets/images/tuong-bac-ho.jpg'
+      image: '/assets/images/tuong-bac-ho.webp'
     },
     {
       title: 'Công trình di tích',
       category: 'DI TÍCH LỊCH SỬ',
-      image: '/assets/images/cong-trinh-di-tich.jpg'
+      image: '/assets/images/cong-trinh-di-tich.webp'
     }
   ];
 
@@ -32,22 +32,22 @@ export default function Projects({ onOpenLightbox }) {
     {
       title: 'Ceremonial Float A05',
       category: 'NATIONAL CEREMONY',
-      image: '/assets/images/xe-nghi-truong-main.jpg'
+      image: '/assets/images/xe-nghi-truong-main.webp'
     },
     {
       title: 'Victory Monument',
       category: 'MONUMENTAL SCULPTURE',
-      image: '/assets/images/tuong-dai-chien-thang.jpg'
+      image: '/assets/images/tuong-dai-chien-thang.webp'
     },
     {
       title: 'President Ho Chi Minh Statue',
       category: 'PORTRAIT STATUE',
-      image: '/assets/images/tuong-bac-ho.jpg'
+      image: '/assets/images/tuong-bac-ho.webp'
     },
     {
       title: 'Heritage Site Installation',
       category: 'HISTORICAL HERITAGE',
-      image: '/assets/images/cong-trinh-di-tich.jpg'
+      image: '/assets/images/cong-trinh-di-tich.webp'
     }
   ];
 

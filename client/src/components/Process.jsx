@@ -46,7 +46,7 @@ export default function Process() {
 
           <div className="process-media reveal-right" data-delay="150">
             <div className="process-img-frame">
-              <img src="/assets/images/quy-trinh-han.jpg" alt="Quy trình chế tác hàn cơ khí mỹ thuật" loading="lazy" />
+              <img src="/assets/images/quy-trinh-han.webp" alt="Quy trình chế tác hàn cơ khí mỹ thuật" loading="lazy" />
             </div>
           </div>
         </div>

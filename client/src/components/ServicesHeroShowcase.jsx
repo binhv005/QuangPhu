@@ -12,7 +12,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Tổ chức',
       titleLine2: 'Sự kiện',
       sub: 'Khối xe nghi trượng A05 – A80',
-      img: '/assets/images/xe-nghi-truong-main.jpg',
+      img: '/assets/images/xe-nghi-truong-main.webp',
       tiltClass: 'tilt-left'
     },
     {
@@ -20,7 +20,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Tượng đài &',
       titleLine2: 'Chân dung',
       sub: 'Tượng Bác Hồ & Tượng thờ gia tiên',
-      img: '/assets/images/tuong-bac-ho.jpg',
+      img: '/assets/images/tuong-bac-ho.webp',
       tiltClass: 'tilt-center'
     },
     {
@@ -28,7 +28,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Sản xuất',
       titleLine2: 'Mỹ thuật & Quà tặng',
       sub: 'Biểu trưng độc bản & Cơ khí nghệ thuật',
-      img: '/assets/images/qua-tang-my-thuat.jpg',
+      img: '/assets/images/qua-tang-my-thuat.webp',
       tiltClass: 'tilt-right'
     }
   ];
@@ -39,7 +39,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Event',
       titleLine2: 'Organization',
       sub: 'Grand Ceremonial Floats A05 – A80',
-      img: '/assets/images/xe-nghi-truong-main.jpg',
+      img: '/assets/images/xe-nghi-truong-main.webp',
       tiltClass: 'tilt-left'
     },
     {
@@ -47,7 +47,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Monuments &',
       titleLine2: 'Portraits',
       sub: 'President Ho Chi Minh & Ancestral Statues',
-      img: '/assets/images/tuong-bac-ho.jpg',
+      img: '/assets/images/tuong-bac-ho.webp',
       tiltClass: 'tilt-center'
     },
     {
@@ -55,7 +55,7 @@ export default function ServicesHeroShowcase({ onScrollToService }) {
       titleLine1: 'Artistic &',
       titleLine2: 'Luxury Gifts',
       sub: 'Exclusive Emblems & Precision Art',
-      img: '/assets/images/qua-tang-my-thuat.jpg',
+      img: '/assets/images/qua-tang-my-thuat.webp',
       tiltClass: 'tilt-right'
     }
   ];
