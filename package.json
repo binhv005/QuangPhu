@@ -1,0 +1,13 @@
+{
+  "name": "quangphu-mern-app",
+  "version": "1.0.0",
+  "description": "Full-stack MERN Application (React + Node.js + MongoDB) for Co Khi My Thuat Quang Phu",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "dev": "node dev.js"
+  },
+  "dependencies": {}
+}
