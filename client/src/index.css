@@ -562,10 +562,13 @@ hr {
 }
 
 .site-header.header-light-theme .lang-switcher {
-  background: #f2f2f2;
-  border-color: rgba(0, 0, 0, 0.12);
+  background: transparent !important;
+  border: none !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.15) !important;
   color: #222222;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: none !important;
+  padding: 0 0 0 16px;
+  border-radius: 0;
 }
 
 .site-header.header-light-theme .lang-btn {
@@ -3328,10 +3331,11 @@ textarea.form-control {
 
   .mobile-nav-footer .lang-switcher {
     display: inline-flex;
-    background: rgba(255, 255, 255, 0.06);
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent !important;
+    padding: 0;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .mobile-nav-footer .btn {
