@@ -1,83 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import TypewriterText from '../components/TypewriterText';
+import LeadershipSection from '../components/LeadershipSection';
 import PartnerMarquee from '../components/PartnerMarquee';
 import { useLanguage } from '../context/LanguageContext';
 
-function CountUpNumber({ target, suffix = '', duration = 2000, active = false }) {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!active) {
-      setCount(0);
-      return;
-    }
-
-    let startTimestamp = null;
-    let animationFrameId;
-
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const elapsed = timestamp - startTimestamp;
-      const progress = Math.min(elapsed / duration, 1);
-      // Smooth ease-out cubic
-      const easeProgress = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(easeProgress * target));
-
-      if (progress < 1) {
-        animationFrameId = requestAnimationFrame(step);
-      } else {
-        setCount(target);
-      }
-    };
-
-    animationFrameId = requestAnimationFrame(step);
-
-    return () => {
-      if (animationFrameId) cancelAnimationFrame(animationFrameId);
-    };
-  }, [target, duration, active]);
-
-  return (
-    <span>
-      {count}
-      {suffix}
-    </span>
-  );
-}
-
 export default function AboutPage() {
   const { lang } = useLanguage();
-  const statsRef = useRef(null);
-  const [isStatsVisible, setIsStatsVisible] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    const el = statsRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsStatsVisible(true);
-            observer.disconnect(); // Runs only once upon first scroll into view
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-      }
-    );
-
-    observer.observe(el);
-
-    return () => {
-      observer.disconnect();
-    };
   }, []);
 
   const isEn = lang === 'en';
@@ -164,40 +95,12 @@ export default function AboutPage() {
                 </>
               )}
             </div>
-
-            {/* Bottom Stats Counter with Auto Scroll-triggered Count-Up */}
-            <div className="about-editorial-stats" ref={statsRef}>
-              <div className="about-stat-box">
-                <div className="about-stat-number">
-                  <CountUpNumber
-                    target={500}
-                    suffix="+"
-                    duration={2000}
-                    active={isStatsVisible}
-                  />
-                </div>
-                <div className="about-stat-label">
-                  {isEn ? 'Featured Projects & Constructions' : 'Dự án & Công trình Tiêu biểu'}
-                </div>
-              </div>
-
-              <div className="about-stat-box">
-                <div className="about-stat-number">
-                  <CountUpNumber
-                    target={15}
-                    suffix="Y"
-                    duration={1800}
-                    active={isStatsVisible}
-                  />
-                </div>
-                <div className="about-stat-label">
-                  {isEn ? 'Brand Development Journey' : 'Hành trình phát triển thương hiệu'}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
+      {/* Leadership Section (Ban Lãnh đạo) */}
+      <LeadershipSection />
 
       {/* Our Valued Clients Marquee Strip above Footer */}
       <PartnerMarquee
@@ -212,4 +115,3 @@ export default function AboutPage() {
     </div>
   );
 }
-

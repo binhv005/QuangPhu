@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ZoomIn } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { servicesDataList } from '../data/servicesData';
+import AlternatingBentoGrid from '../components/AlternatingBentoGrid';
 
 export default function ServiceDetailPage({ onOpenLightbox }) {
   const { slug } = useParams();
@@ -31,9 +32,9 @@ export default function ServiceDetailPage({ onOpenLightbox }) {
     );
   }
 
-  const handleImageClick = (src, title) => {
+  const handleImageClick = (item) => {
     if (onOpenLightbox) {
-      onOpenLightbox(src, title || service.title);
+      onOpenLightbox(item.src, item.title || service.title);
     }
   };
 
@@ -69,34 +70,18 @@ export default function ServiceDetailPage({ onOpenLightbox }) {
           ))}
         </div>
 
-        {/* Photo Gallery (Pure images below text) */}
-        <div className="project-detail-gallery-grid reveal-up" data-delay="180">
-          {service.gallery && service.gallery.map((item, idx) => (
-            <div
-              key={idx}
-              className={`project-detail-photo-card span-${item.span || 'half'}`}
-              onClick={() => handleImageClick(item.src, service.title)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && handleImageClick(item.src, service.title)}
-              title="Bấm để phóng to ảnh"
-            >
-              <div className="project-detail-photo-wrap">
-                <img
-                  src={item.src}
-                  alt={`${service.title} - ảnh ${idx + 1}`}
-                  loading="lazy"
-                  className="project-detail-img"
-                />
-                <div className="project-detail-photo-overlay">
-                  <span className="photo-zoom-icon">
-                    <ZoomIn size={24} color="#ffffff" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Photo Gallery (Alternating Bento Clusters Matching Reference Templates) */}
+        {service.gallery && service.gallery.length > 0 && (
+          <div className="reveal-up" data-delay="180" style={{ marginBottom: '60px' }}>
+            <h2 className="section-title" style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: '#ffffff', textAlign: 'left' }}>
+              HÌNH ẢNH <span className="gold-text">THỰC TẾ & CHẾ TÁC TẠI XƯỞNG</span>
+            </h2>
+            <AlternatingBentoGrid
+              items={service.gallery}
+              onItemClick={handleImageClick}
+            />
+          </div>
+        )}
 
         {/* Back Link at bottom */}
         <div className="project-detail-back-row">

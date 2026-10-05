@@ -14,9 +14,14 @@ export const servicesDataList = [
       'Với đội ngũ kỹ sư cơ khí chính xác kết hợp nghệ nhân kim hoàn lành nghề, mỗi công trình xe nghi trượng là sự kết tinh hoàn mỹ giữa chuẩn mực kỹ thuật công nghiệp và mỹ cảm nghệ thuật truyền thống.'
     ],
     gallery: [
-      { src: '/assets/images/xe-nghi-truong-main.webp', span: 'full' },
-      { src: '/assets/images/1790914174331_3763498134712611457_3763498134712611457_7ddc2411d84842ef2995298f982feedb.webp', span: 'half' },
-      { src: '/assets/images/khach-hang-su-kien.webp', span: 'half' }
+      { src: '/assets/images/xe-nghi-truong-main.webp', title: 'Khối xe Nghi trượng phục vụ đại lễ A80' },
+      { src: '/assets/images/1790914174331_3763498134712611457_3763498134712611457_7ddc2411d84842ef2995298f982feedb.webp', title: 'Biểu tượng Quốc huy trên khối xe nghi trượng' },
+      { src: '/assets/images/khach-hang-su-kien.webp', title: 'Đoàn diễu hành trang trọng tại quảng trường' },
+      { src: '/assets/images/tuong-bac-ho.webp', title: 'Tượng Bác Hồ trên khối xe diễu hành trung tâm' },
+      { src: '/assets/images/tuong-dai-chien-thang.webp', title: 'Tác phẩm nghệ thuật hoành tráng' },
+      { src: '/assets/images/gallery-cham-dong.webp', title: 'Chế tác hoa văn đồng thủ công' },
+      { src: '/assets/images/gallery-nha-xuong.webp', title: 'Phân xưởng lắp ráp khối xe nghi trượng' },
+      { src: '/assets/images/quy-trinh-han.webp', title: 'Hàn kết cấu chịu lực an toàn tuyệt đối' }
     ]
   },
   {
@@ -34,9 +39,14 @@ export const servicesDataList = [
       'Sử dụng nguyên liệu đồng đỏ, đồng mắt cua thanh khiết, bề mặt xử lý phủ bóng hoặc dát vàng 24K công nghệ cao, đảm bảo độ sắc nét vĩnh cửu theo năm tháng.'
     ],
     gallery: [
-      { src: '/assets/images/tuong-bac-ho.webp', span: 'full' },
-      { src: '/assets/images/tuong-tho.webp', span: 'half' },
-      { src: '/assets/images/tuong-dai-chien-thang.webp', span: 'half' }
+      { src: '/assets/images/tuong-bac-ho.webp', title: 'Tượng Bác Hồ vẫy tay chào đồng bào' },
+      { src: '/assets/images/tuong-tho.webp', title: 'Tượng thờ gia tiên truyền thần bằng đồng' },
+      { src: '/assets/images/about-artisan.webp', title: 'Nghệ nhân gọt giũa tượng chân dung' },
+      { src: '/assets/images/tuong-dai-chien-thang.webp', title: 'Tác phẩm tượng đồng nguyên khối trang nghiêm' },
+      { src: '/assets/images/cong-trinh-di-tich.webp', title: 'Công trình tượng đài khu di tích lịch sử' },
+      { src: '/assets/images/khach-hang-co-quan.webp', title: 'Lễ bàn giao tượng cho cơ quan bộ ban ngành' },
+      { src: '/assets/images/gallery-cham-dong.webp', title: 'Nghệ thuật chạm nổi hoa văn truyền thống' },
+      { src: '/assets/images/hero-artisan.webp', title: 'Tâm huyết và tài hoa của nghệ nhân Quảng Phú' }
     ]
   },
   {
@@ -54,9 +64,14 @@ export const servicesDataList = [
       'Chúng tôi hỗ trợ tư vấn thiết kế 3D cá nhân hóa theo từng thông điệp sự kiện, khắc chìm thương hiệu trang trọng và hoàn thiện trong hộp quà sơn mài/nhung gấm cao cấp.'
     ],
     gallery: [
-      { src: '/assets/images/qua-tang-my-thuat.webp', span: 'full' },
-      { src: '/assets/images/gallery-cham-dong.webp', span: 'half' },
-      { src: '/assets/images/khach-hang-co-quan.webp', span: 'half' }
+      { src: '/assets/images/qua-tang-my-thuat.webp', title: 'Biểu trưng độc bản mạ vàng 24K cao cấp' },
+      { src: '/assets/images/gallery-cham-dong.webp', title: 'Chạm khắc hoa văn tinh xảo' },
+      { src: '/assets/images/khach-hang-co-quan.webp', title: 'Quà tặng lưu niệm cho đối tác ngoại giao' },
+      { src: '/assets/images/about-artisan.webp', title: 'Nghệ nhân kim hoàn điêu khắc và hoàn thiện chi tiết' },
+      { src: '/assets/images/hero-artisan.webp', title: 'Nghệ nhân chế tác biểu trưng nghệ thuật độc bản' },
+      { src: '/assets/images/gallery-nha-xuong.webp', title: 'Quy trình sản xuất quà tặng mỹ thuật' },
+      { src: '/assets/images/quy-trinh-han.webp', title: 'Gia công chi tiết kim loại tinh xảo' },
+      { src: '/assets/images/khach-hang-su-kien.webp', title: 'Vinh danh tại các sự kiện quy mô lớn' }
     ]
   },
   {
@@ -73,59 +88,25 @@ export const servicesDataList = [
       'Quy trình sơn phủ tĩnh điện đa lớp kết hợp công nghệ chống oxy hóa giúp sản phẩm duy trì vẻ đẹp sáng bóng, không hoen gỉ qua nhiều thập kỷ.'
     ],
     gallery: [
-      { src: '/assets/images/about-artisan.webp', span: 'full' },
-      { src: '/assets/images/gallery-nha-xuong.webp', span: 'half' },
-      { src: '/assets/images/quy-trinh-han.webp', span: 'half' }
+      { src: '/assets/images/about-artisan.webp', title: 'Gia công cơ khí mỹ thuật chuyên nghiệp' },
+      { src: '/assets/images/gallery-nha-xuong.webp', title: 'Phân xưởng máy móc hiện đại quy mô lớn' },
+      { src: '/assets/images/quy-trinh-han.webp', title: 'Hàn kết cấu mỹ thuật chính xác' },
+      { src: '/assets/images/gallery-cham-dong.webp', title: 'Chạm dập hoa văn kim loại nghệ thuật' },
+      { src: '/assets/images/tuong-dai-chien-thang.webp', title: 'Điêu khắc kiến trúc kim loại quy mô' },
+      { src: '/assets/images/khach-hang-su-kien.webp', title: 'Thi công các công trình trọng điểm' },
+      { src: '/assets/images/cong-trinh-di-tich.webp', title: 'Lắp đặt hoàn thiện tại di tích' },
+      { src: '/assets/images/hero-artisan.webp', title: 'Nghệ nhân cơ khí tài hoa' }
     ]
   }
 ];
 
 export const servicesGeneralGallery = [
-  // Column 1 (Left: Tall Top, Medium Bottom)
-  {
-    col: 1,
-    src: '/assets/images/xe-nghi-truong-main.webp',
-    title: 'Khối xe Nghi trượng Quốc gia A05 - A80',
-    type: 'tall'
-  },
-  {
-    col: 1,
-    src: '/assets/images/about-artisan.webp',
-    title: 'Nghệ nhân chạm khắc thủ công kim hoàn',
-    type: 'medium'
-  },
-
-  // Column 2 (Middle: Landscape Top, Medium Center, Landscape Bottom)
-  {
-    col: 2,
-    src: '/assets/images/qua-tang-my-thuat.webp',
-    title: 'Quà tặng mỹ thuật mạ vàng cao cấp',
-    type: 'landscape'
-  },
-  {
-    col: 2,
-    src: '/assets/images/tuong-bac-ho.webp',
-    title: 'Tượng Bác Hồ chân dung đúc đồng',
-    type: 'medium'
-  },
-  {
-    col: 2,
-    src: '/assets/images/gallery-cham-dong.webp',
-    title: 'Quy trình dập nổi và chạm đồng mỹ nghệ',
-    type: 'landscape'
-  },
-
-  // Column 3 (Right: Medium Top, Tall Bottom)
-  {
-    col: 3,
-    src: '/assets/images/tuong-dai-chien-thang.webp',
-    title: 'Công trình Tượng đài chiến thắng',
-    type: 'medium'
-  },
-  {
-    col: 3,
-    src: '/assets/images/1790914174331_3763498134712611457_3763498134712611457_7ddc2411d84842ef2995298f982feedb.webp',
-    title: 'Biểu tượng Quốc huy đại lễ cấp Quốc gia',
-    type: 'tall'
-  }
+  { src: '/assets/images/gallery-cham-dong.webp', title: 'Quy trình dập nổi & chạm đồng mỹ nghệ' },
+  { src: '/assets/images/qua-tang-my-thuat.webp', title: 'Quà tặng mỹ thuật mạ vàng cao cấp' },
+  { src: '/assets/images/tuong-bac-ho.webp', title: 'Tượng Bác Hồ chân dung đúc đồng' },
+  { src: '/assets/images/xe-nghi-truong-main.webp', title: 'Khối xe Nghi trượng Quốc gia A05 – A80' },
+  { src: '/assets/images/tuong-dai-chien-thang.webp', title: 'Tác phẩm Tượng đài Chiến thắng lịch sử' },
+  { src: '/assets/images/gallery-nha-xuong.webp', title: 'Xưởng sản xuất cơ khí quy mô lớn' },
+  { src: '/assets/images/about-artisan.webp', title: 'Nghệ nhân tạo tác cơ khí mỹ thuật' },
+  { src: '/assets/images/1790914174331_3763498134712611457_3763498134712611457_7ddc2411d84842ef2995298f982feedb.webp', title: 'Biểu tượng Quốc huy đại lễ cấp Quốc gia' }
 ];

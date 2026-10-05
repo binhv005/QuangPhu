@@ -9,7 +9,7 @@ export default function PartnerMarquee({ title, subtitle, showTitle = false }) {
   const displaySubtitle = subtitle;
 
   const partners = [
-    { name: 'Bộ Quốc phòng', logo: '/assets/partners/Bo-quoc-phong.svg' },
+    { name: 'Bộ Quốc phòng', logo: '/assets/partners/Bo-quoc-phong.webp' },
     { name: 'Bộ Công an', logo: '/assets/partners/Bo-cong-an-300x246.webp' },
     { name: 'Bộ Ngoại giao', logo: '/assets/partners/Bo-ngoai-giao-300x183.webp' },
     { name: 'Bộ Tài chính', logo: '/assets/partners/Bo-tai-chinh-300x300.webp' },

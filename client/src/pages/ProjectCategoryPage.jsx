@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { projectCategories, projectsList } from '../data/projectsData';
+import AlternatingBentoGrid from '../components/AlternatingBentoGrid';
 
 export default function ProjectCategoryPage({ category: categoryProp }) {
   const { catSlug } = useParams();
   const { lang } = useLanguage();
+  const navigate = useNavigate();
 
   const activeCatKey = categoryProp || catSlug || 'bo-ban-nganh';
 
@@ -43,59 +45,28 @@ export default function ProjectCategoryPage({ category: categoryProp }) {
           </h1>
         </header>
 
-        {/* List of projects in this category (Matching Reference Image 2) */}
-        <div className="project-category-list">
-          {displayProjects.map((project, idx) => {
-            const monthText = project.month ? (project.month.startsWith('Th') ? `Tháng ${project.month.replace('Th', '')}` : project.month) : 'Tháng 8';
-            const shortDesc = project.paragraphs && project.paragraphs[0] ? project.paragraphs[0] : '';
+        {/* Alternating Bento Grid for Projects in this category */}
+        <AlternatingBentoGrid
+          items={displayProjects.map((p) => ({
+            ...p,
+            src: p.image,
+            title: p.title
+          }))}
+          onItemClick={(item) => navigate(`/du-an/${item.slug}`)}
+          renderItemOverlay={(item) => (
+            <div className="project-bento-overlay">
+              <div className="project-bento-top-title">
+                <span>{item.title}</span>
+              </div>
 
-            return (
-              <article
-                key={project.id || idx}
-                className="project-category-item reveal-up"
-                data-delay={idx * 80}
-              >
-                {/* Date Column */}
-                <div className="project-category-date-col">
-                  <span className="project-category-day">{project.day || '27'}</span>
-                  <span className="project-category-month">{monthText}</span>
-                </div>
-
-                {/* Thumbnail Image Box */}
-                <div className="project-category-thumb-box">
-                  <Link to={`/du-an/${project.slug}`} className="project-category-thumb-link">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      loading="lazy"
-                      className="project-category-thumb-img"
-                    />
-                  </Link>
-                </div>
-
-                {/* Content Column: Title, Paragraph, and Read More link */}
-                <div className="project-category-content-col">
-                  <h2 className="project-category-item-title">
-                    <Link to={`/du-an/${project.slug}`} className="project-category-title-link">
-                      {project.title}
-                    </Link>
-                  </h2>
-
-                  <p className="project-category-item-desc">
-                    {shortDesc}
-                  </p>
-
-                  <div className="project-category-action">
-                    <Link to={`/du-an/${project.slug}`} className="project-category-readmore-btn">
-                      <span>Xem Chi Tiết</span>
-                      <ArrowRight size={17} className="project-category-arrow-icon" />
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+              <div className="project-bento-bottom-action">
+                <span className="bento-arrow-circle" aria-hidden="true">
+                  <ArrowRight size={20} color="#ffffff" />
+                </span>
+              </div>
+            </div>
+          )}
+        />
       </div>
     </div>
   );

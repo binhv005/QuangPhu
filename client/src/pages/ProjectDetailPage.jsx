@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ZoomIn } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { projectsList } from '../data/projectsData';
+import AlternatingBentoGrid from '../components/AlternatingBentoGrid';
 
 export default function ProjectDetailPage({ onOpenLightbox }) {
   const { slug } = useParams();
@@ -10,9 +11,7 @@ export default function ProjectDetailPage({ onOpenLightbox }) {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  const project = projectsList.find(
-    (p) => p.slug === slug || String(p.id) === slug
-  );
+  const project = projectsList.find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -24,18 +23,20 @@ export default function ProjectDetailPage({ onOpenLightbox }) {
           </p>
           <Link to="/du-an" className="btn btn-outline-gold">
             <ArrowLeft size={16} />
-            <span>QUAY LẠI DANH SÁCH DỰ ÁN</span>
+            <span>QUAY LẠI TRANG DỰ ÁN</span>
           </Link>
         </div>
       </div>
     );
   }
 
-  const handleImageClick = (src, title) => {
+  const handleImageClick = (item) => {
     if (onOpenLightbox) {
-      onOpenLightbox(src, title || project.title);
+      onOpenLightbox(item.src, item.title || project.title);
     }
   };
+
+  const monthText = project.month ? (project.month.startsWith('Th') ? `Tháng ${project.month.replace('Th', '')}` : project.month) : 'Tháng 8';
 
   return (
     <div className="page-wrapper project-editorial-detail-page subpage-content">
@@ -47,11 +48,11 @@ export default function ProjectDetailPage({ onOpenLightbox }) {
           <span className="breadcrumb-current">{project.title}</span>
         </nav>
 
-        {/* Top Header Section: Date on Left + Title on Right */}
+        {/* Top Header Section: Project Day/Month on Left + Title on Right */}
         <header className="project-detail-top-header reveal-up" data-delay="60">
           <div className="project-detail-date-col">
             <span className="project-detail-day">{project.day || '27'}</span>
-            <span className="project-detail-month">{project.month || 'Th8'}</span>
+            <span className="project-detail-month">{monthText}</span>
           </div>
           <div className="project-detail-title-col">
             <h1 className="project-detail-heading">
@@ -69,40 +70,24 @@ export default function ProjectDetailPage({ onOpenLightbox }) {
           ))}
         </div>
 
-        {/* Photo Gallery (Pure images below text) */}
-        <div className="project-detail-gallery-grid reveal-up" data-delay="180">
-          {project.gallery && project.gallery.map((item, idx) => (
-            <div
-              key={idx}
-              className={`project-detail-photo-card span-${item.span || 'half'}`}
-              onClick={() => handleImageClick(item.src, project.title)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && handleImageClick(item.src, project.title)}
-              title="Bấm để phóng to ảnh"
-            >
-              <div className="project-detail-photo-wrap">
-                <img
-                  src={item.src}
-                  alt={`${project.title} - ảnh ${idx + 1}`}
-                  loading="lazy"
-                  className="project-detail-img"
-                />
-                <div className="project-detail-photo-overlay">
-                  <span className="photo-zoom-icon">
-                    <ZoomIn size={24} color="#ffffff" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Photo Gallery (Alternating Bento Clusters Matching Reference Templates) */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="reveal-up" data-delay="180" style={{ marginBottom: '60px' }}>
+            <h2 className="section-title" style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: '#ffffff', textAlign: 'left' }}>
+              BỘ SƯU TẬP <span className="gold-text">HÌNH ẢNH CÔNG TRÌNH THỰC TẾ</span>
+            </h2>
+            <AlternatingBentoGrid
+              items={project.gallery}
+              onItemClick={handleImageClick}
+            />
+          </div>
+        )}
 
         {/* Back Link at bottom */}
         <div className="project-detail-back-row">
           <Link to="/du-an" className="btn btn-outline-gold">
             <ArrowLeft size={16} />
-            <span>QUAY LẠI DANH SÁCH DỰ ÁN</span>
+            <span>QUAY LẠI TRANG DỰ ÁN</span>
           </Link>
         </div>
       </div>

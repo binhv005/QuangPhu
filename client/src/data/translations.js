@@ -33,10 +33,7 @@ export const translations = {
     hero: {
       titlePart1: 'Quảng Phú',
       titlePart2: 'Cơ khí mỹ thuật',
-      statProjectsNum: '500+',
-      statProjectsLabel: 'Dự án & Sự kiện Tiêu biểu',
-      statYearsNum: '15+',
-      statYearsLabel: 'Năm Phát triển Thương hiệu',
+      tagline: 'Kết tinh từ tâm – Kiến tạo giá trị trường tồn cùng thời gian.',
       ctaConsult: 'Liên hệ tư vấn',
       ctaProjects: 'Xem dự án tiêu biểu',
       emblemAlt: 'Biểu tượng Trống Đồng Cơ khí Mỹ thuật Quảng Phú'
@@ -192,10 +189,7 @@ export const translations = {
     hero: {
       titlePart1: 'Quang Phu',
       titlePart2: 'Fine Art Mechanics',
-      statProjectsNum: '500+',
-      statProjectsLabel: 'Major Projects & National Events',
-      statYearsNum: '15+',
-      statYearsLabel: 'Years of Brand Excellence',
+      tagline: 'Crafted with passion – Creating timeless value for generations.',
       ctaConsult: 'Request Consultation',
       ctaProjects: 'View Featured Works',
       emblemAlt: 'Quang Phu Fine Art Mechanics Bronze Drum Emblem'

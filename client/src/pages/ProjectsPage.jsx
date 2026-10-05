@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { projectCategories, projectsList } from '../data/projectsData';
+import AlternatingBentoGrid from '../components/AlternatingBentoGrid';
 
 export default function ProjectsPage() {
-  const { lang, t } = useLanguage();
+  const { lang } = useLanguage();
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filteredProjects = activeCategory === 'all'
@@ -47,44 +49,28 @@ export default function ProjectsPage() {
           </div>
         </header>
 
-        {/* Bento Staggered Grid (Matching Image 1) */}
-        <div className="projects-bento-grid">
-          {displayProjects.map((project, idx) => {
-            const isLarge = idx % 3 === 0;
+        {/* Alternating Bento Grid (Alternates Pattern A & Pattern B per 8 items) */}
+        <AlternatingBentoGrid
+          items={displayProjects.map((p) => ({
+            ...p,
+            src: p.image,
+            title: p.title
+          }))}
+          onItemClick={(item) => navigate(`/du-an/${item.slug}`)}
+          renderItemOverlay={(item) => (
+            <div className="project-bento-overlay">
+              <div className="project-bento-top-title">
+                <span>{item.title}</span>
+              </div>
 
-            return (
-              <Link
-                key={project.id || idx}
-                to={`/du-an/${project.slug}`}
-                className={`project-bento-card ${isLarge ? 'card-large' : 'card-small'} reveal-up`}
-                data-delay={(idx % 3) * 120}
-              >
-                {/* Background Image */}
-                <div className="project-bento-img-wrap">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="project-bento-img"
-                  />
-                </div>
-
-                {/* Hover Gradient & Information Overlay */}
-                <div className="project-bento-overlay">
-                  <div className="project-bento-top-title">
-                    <span>{project.title}</span>
-                  </div>
-
-                  <div className="project-bento-bottom-action">
-                    <span className="bento-arrow-circle" aria-hidden="true">
-                      <ArrowRight size={20} color="#ffffff" />
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
+              <div className="project-bento-bottom-action">
+                <span className="bento-arrow-circle" aria-hidden="true">
+                  <ArrowRight size={20} color="#ffffff" />
+                </span>
+              </div>
+            </div>
+          )}
+        />
       </div>
     </div>
   );
