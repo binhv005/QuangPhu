@@ -25,7 +25,7 @@ export default function Footer({ onPhoneClick }) {
         <div className="footer-sample-top reveal-up">
           <div className="footer-sample-cols">
             {/* SITEMAP */}
-            <div className="footer-sample-col">
+            <div className="footer-sample-col footer-sample-sitemap">
               <h4 className="footer-sample-heading">{lang === 'en' ? 'SITEMAP' : 'SƠ ĐỒ TRANG'}</h4>
               <ul className="footer-sample-list">
                 <li><Link to="/">{t('nav.home')}</Link></li>
